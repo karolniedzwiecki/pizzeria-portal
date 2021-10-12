@@ -68,3 +68,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+http://localhost:3000 – bieżący projekt, czyli panel administracyjny,
+http://localhost:3131 – strona pizzerii,
+http://localhost:3131/api – url API naszego projektu,
+http://localhost:3131/api/db – podgląd całej bazy danych,
+http://localhost:3131/panel – stan bieżącego projektu z momentu uruchomienia yarn start, strona pod tym adresem nie będzie zmieniała się "na żywo" wraz ze zmianami wprowadzanymi w plikach projektu.
