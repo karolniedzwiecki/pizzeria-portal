@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import styles from './SingleBooking.scss';
+import styles from './SingleBooking.module.scss';
 
 const SingleBooking = () => {
 

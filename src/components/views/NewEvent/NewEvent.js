@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './NewEvent.scss';
+import styles from './NewEvent.module.scss';
 
 const NewEvent = () => {
     return (

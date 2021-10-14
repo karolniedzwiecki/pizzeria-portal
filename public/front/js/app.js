@@ -1,8 +1,8 @@
-import {settings, select, classNames} from './settings.js';
-import Product from './components/Product.js';
-import Cart from './components/Cart.js';
-import Booking from './components/Booking.js';
-import Home from './components/Home.js';
+import {settings, select, classNames} from '../settings.js';
+import Product from '../components/Product.js';
+import Cart from '../components/Cart.js';
+import Booking from '../components/Booking.js';
+import Home from '../components/Home.js';
 
 export const app = {
   initPages: function(){
