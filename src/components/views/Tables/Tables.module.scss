@@ -16,4 +16,13 @@
   td {
     max-width: 100px;
   }
+
+  .newButtons {
+    margin: 20px;
+
+    a {
+      margin: 10px;
+      background-color: $color-success;
+    }
+  }
 }

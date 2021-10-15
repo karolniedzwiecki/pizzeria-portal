@@ -11,6 +11,7 @@ const demoContent = [
   {id: '4', status: 'booking', hour: '10:30', eventName: ''},
   {id: '5', status: 'events', hour: '10:30', eventName: 'happy hours'},
   {id: '6', status: 'booking', hour: '10:30', eventName: ''},
+  {id: 'new', status: '', hour: '', eventName: ''},
 ];
 
 const Booking = (value) => {
