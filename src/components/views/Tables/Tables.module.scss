@@ -2,4 +2,18 @@
 
 .component {
   padding: $base-size;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .textField {
+    margin: 20px;
+    width: 200px,
+  }
+
+  td {
+    max-width: 100px;
+  }
 }

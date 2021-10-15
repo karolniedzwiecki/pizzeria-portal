@@ -1,17 +1,49 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import styles from './Booking.module.scss';
 
-const Booking = () => {
+import Paper from '@material-ui/core/Paper';
+
+const demoContent = [
+  {id: '1', status: 'booking', hour: '10:30', eventName: 'birthday'},
+  {id: '2', status: 'booking', hour: '10:30', eventName: ''},
+  {id: '3', status: 'events', hour: '10:30', eventName: 'pizza time'},
+  {id: '4', status: 'booking', hour: '10:30', eventName: ''},
+  {id: '5', status: 'events', hour: '10:30', eventName: 'happy hours'},
+  {id: '6', status: 'booking', hour: '10:30', eventName: ''},
+];
+
+const Booking = (value) => {
+
+    const id = value.match.params.id;
+
+    const content = () => {
+        const info = [];
+        demoContent.map(row => {
+          if (row.id === id){
+            info.push(
+              <div key={id}>
+                <p>Id: {row.id}</p>
+                <p>Hour: {row.hour}</p>
+                <p>Status: {row.status}</p>
+                <p>Event name: {row.eventName}</p>
+              </div>
+            );
+          }
+        });
+        return info;
+      };
+
     return (
-        <div className={styles.component}>
-            <Link to={`${process.env.PUBLIC_URL}/tables/booking/new`}>
-                <h2>New booking</h2>
-            </Link>
-            <Link to={`${process.env.PUBLIC_URL}/tables/booking/:id`}>
-                <h2>Single Booking</h2>
-            </Link>
-        </div>
+    
+        <Paper className={styles.component}>
+            <h3 className={styles.title}>
+                Informations
+            </h3>
+            <div>
+                {content()}
+            </div>
+        </Paper>  
     );
 };
 

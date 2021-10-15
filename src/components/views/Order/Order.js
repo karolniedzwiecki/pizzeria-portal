@@ -10,7 +10,7 @@ const Order = () => {
     return (
         <div className={styles.component}>
             <Link to={`${process.env.PUBLIC_URL}/ordering`}>Ordering view</Link>
-            <h2>Order view 1 {id}</h2>
+            <h2>Order view {id}</h2>
         </div>
     );
 };
