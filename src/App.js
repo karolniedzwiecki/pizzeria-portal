@@ -18,7 +18,7 @@ import SingleEvent from './components/views/SingleEvent/SingleEvent';
 import NewEvent from './components/views/NewEvent/NewEvent';
 
 import Ordering from './components/views/Ordering/Ordering';
-import NewOrder from './components/views/NewOrder/NewOrder';
+import NewOrder from './components/views/NewOrder/NewOrderContainer';
 import Order from './components/views/Order/Order';
 import Kitchen from './components/views/Kitchen/Kitchen';
 
