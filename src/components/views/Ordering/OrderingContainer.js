@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import NewOrder from './NewOrder';
+import Ordering from './Ordering';
 import { getAllProducts, fetchProductsFromAPI, getProductsLoadingState } from '../../../redux/productRedux';
 
 const mapStateToProps = (state) => ({
@@ -11,4 +11,4 @@ const mapDispatchToProps = (dispatch) => ({
   fetchProducts: () => dispatch(fetchProductsFromAPI()),
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(NewOrder);
+export default connect(mapStateToProps, mapDispatchToProps)(Ordering);
